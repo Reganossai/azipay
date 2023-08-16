@@ -482,6 +482,10 @@
 }
 @media only screen and (max-width: 800px) {
 
+  .sidebar-div{
+    display: none;
+  }
+
   /* NAVBAR */
   .nav-us {
     display: none;

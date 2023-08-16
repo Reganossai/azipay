@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="nav-usa">
       <nav className="navbar navbar-expand-lg">
         <Link to="/">
-          <img src={image} className="logooo" alt="logoo" />
+          <img src={image} className="logoo" alt="logoo" />
         </Link>
 
         <div id="navbarSupportedContent">
@@ -49,6 +49,8 @@ const Navbar = () => {
                 Register
               </button>
             </li>
+            </ul>
+        </div>
             <div onClick={handleNav} className="zaracho">
               {nav ? (
                 <FontAwesomeIcon icon={faXmark} />
@@ -56,12 +58,36 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faBars} />
               )}
             </div>
-          </ul>
-        </div>
+         
         {nav ? (
           <div id="navbarSupportedContentMobile">
             <ul>
-              
+            <li className="nav-link">
+              <Link to="/individual">Individual</Link>
+            </li>
+            <li className="nav-link">
+              <Link to="/Business">Business</Link>
+            </li>
+
+            <li className="nav-link">
+              <Link to="pricing">Pricing</Link>
+            </li>
+
+            <li className="nav-link">
+              <Link to="/set-your-payroll">Set Your payroll</Link>
+            </li>
+
+            <li>
+              <button id="login-bt" className="btn btn-outline-dark">
+                Log in
+              </button>
+            </li>
+
+            <li>
+              <button id="register-bt" className="btn btn-primary">
+                Register
+              </button>
+            </li>
             </ul>
           </div>
         ) : null}

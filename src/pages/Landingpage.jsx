@@ -12,6 +12,8 @@ import dot from "../assets/dot.png";
 import get from "../assets/get.png";
 import first from "../assets/first.png";
 import thing from "../assets/thing.png";
+import Footer from "../components/Footer";
+
 
 export const Landingpage = () => {
   return (
@@ -39,11 +41,18 @@ export const Landingpage = () => {
       <div className="dot-get-first">
         <img src={dot} className="dot" alt="dot"/>
         <img src={get} className="get" alt="get"/>
-        <div>
+        <div className="fff">
           <img src={thing} className="thing" alt="thing"/>
           <img src={first} className="first" alt="first"/>
+          <input type="text" className="inp-2" placeholder="First Name"/>
+          <input type="text" className="inp-2" placeholder="Last Name"/>
+          <input type="text" className="inp-2" placeholder="Email"/>
+          <input type="text" className="inp-2" placeholder="Job Title"/>
+          <input type="text" className="inp-2" placeholder="Company Size"/>
+          <button type="submit" id="inp-3" className="btn btn-success">Request Demo</button>
         </div>
       </div>
+      <Footer/>
       </div>
   );
 };
